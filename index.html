@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B&B Survey</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id="content">
+      <h1 id="title">Birgit's Bed and Breakfast</h1>
+      <p id="description">Did you enjoy your stay with us?</p>
+      <form id="survey-form">
+
+        <fieldset>
+          <legend>Personalia</legend>
+          <label for="name" id="name-label">Your name <input id="name" type="text" name="name" placeholder="Jane Doe" required></label>
+          <label for="email" id="email-label">Your email <input id="email" type="email" name="email" placeholder="janedoe@gmail.com" required></label>
+          <label for="number" id="number-label">Your age <input id="number" type="number" name="age" placeholder="35" min="16" max="120"></label>
+          <label>How did you find us?<select id="dropdown">
+            <option>(select an option)</option>
+            <option>Personal Recommendation</option>
+            <option>Internet</option>
+            <option>Other</option>
+          </select></label>
+        </fieldset>
+        
+        <fieldset>
+          <legend>Your experience</legend>
+          <p class="question">Would you visit us again?</p>
+          <label for="repeat-yes"><input id="repeat-yes" type="radio" name="repeat" value="repeat-yes"> Yes, with great pleasure!</label>
+          <label for="repeat-no"><input id="repeat-no" type="radio" name="repeat" value="repeat-no"> Never again!</label>
+          <p class="question">What's your opinion? <small>(check all that apply)</small><p>
+          <label for="breakfast"><input id="breakfast" type="checkbox" name="breakfast" value="breakfast"> Breakfast was plenty and tasteful</label>
+          <label for="room"><input id="room" type="checkbox" name="room" value="room"> Room was clean</label>
+          <label for="service"><input id="service" type="checkbox" name="service" value="service"> Service was outstanding</label>
+          <label for="house"><input id="house" type="checkbox" name="house" value="house"> House is beautiful</label>
+          <label for="garden"><input id="garden" type="checkbox" name="garden" value="garden"> Garden is exquisite</label>
+          <label for="comments" class="question">Any comments or suggestions? Please let us know!<textarea id="comments" name="comments" placeholder="Enter your comments here"></textarea></label>
+        </fieldset>
+          <input type="submit" id="submit" value="Submit">
+      </form>
+    </div>
+  </body>
+</html>
